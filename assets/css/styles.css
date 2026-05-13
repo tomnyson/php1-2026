@@ -1,0 +1,172 @@
+:root {
+  --shop-ink: #16202a;
+  --shop-muted: #667085;
+  --shop-line: #e6e8ec;
+  --shop-brand: #0f766e;
+  --shop-accent: #f97316;
+  --shop-soft: #f6f8fa;
+}
+
+body {
+  color: var(--shop-ink);
+  background: #fff;
+}
+
+.topbar {
+  font-size: .875rem;
+  color: #e9fbf8;
+  background: #12343b;
+}
+
+.navbar-brand {
+  letter-spacing: 0;
+}
+
+.hero {
+  min-height: 520px;
+  background:
+    linear-gradient(90deg, rgba(9, 31, 36, .86), rgba(9, 31, 36, .38)),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=80") center/cover;
+}
+
+.hero h1 {
+  max-width: 720px;
+}
+
+.section-band {
+  background: var(--shop-soft);
+}
+
+.text-muted-2 {
+  color: var(--shop-muted);
+}
+
+.category-tile,
+.product-card,
+.metric-card,
+.table-panel,
+.auth-panel {
+  border: 1px solid var(--shop-line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.category-tile {
+  min-height: 150px;
+}
+
+.product-card img,
+.product-detail-img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #eef2f4;
+}
+
+.product-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(22, 32, 42, .08);
+}
+
+.cart-thumb {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #eef2f4;
+}
+
+.empty-state {
+  border: 1px dashed var(--shop-line);
+  border-radius: 8px;
+  padding: 2rem;
+  color: var(--shop-muted);
+  background: #fff;
+  text-align: center;
+}
+
+.badge-sale {
+  color: #fff;
+  background: var(--shop-accent);
+}
+
+.btn-brand {
+  color: #fff;
+  background: var(--shop-brand);
+  border-color: var(--shop-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  color: #fff;
+  background: #0b5f59;
+  border-color: #0b5f59;
+}
+
+.icon-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-grid;
+  place-items: center;
+}
+
+.admin-shell {
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.admin-sidebar {
+  background: #102a32;
+}
+
+.admin-sidebar .nav-link {
+  color: rgba(255, 255, 255, .72);
+  border-radius: 6px;
+}
+
+.admin-sidebar .nav-link.active,
+.admin-sidebar .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+}
+
+.status-dot {
+  width: .65rem;
+  height: .65rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background: #0f1f25;
+  color: rgba(255, 255, 255, .76);
+}
+
+footer a {
+  color: rgba(255, 255, 255, .86);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: 460px;
+  }
+
+  .display-4 {
+    font-size: 2.3rem;
+  }
+}
